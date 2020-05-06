@@ -37,17 +37,17 @@ function populateMarkers(dataType) {
                 icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
             });
     	//Build the content for InfoWindow
-            var content = '<h1 class="mt0"><a href="' + marker.website + '" target="_blank" title="' + marker.shopname + '">' + marker.shopname + '</a></h1><p>' + marker.details + '</p>';
-        	marker.infowindow = new google.maps.InfoWindow({
-            	content: content,
-            	maxWidth: 400
-            });
+            // var content = '<h1 class="mt0"><a href="' + marker.website + '" target="_blank" title="' + marker.shopname + '">' + marker.shopname + '</a></h1><p>' + marker.details + '</p>';
+        	// marker.infowindow = new google.maps.InfoWindow({
+            // 	content: content,
+            // 	maxWidth: 400
+            // });
     	//Add InfoWindow
-            google.maps.event.addListener(marker, 'click', function() {
-                if (MAPAPP.currentInfoWindow) MAPAPP.currentInfoWindow.close();
-                marker.infowindow.open(map, marker);
-                MAPAPP.currentInfoWindow = marker.infowindow;
-            });
+            // google.maps.event.addListener(marker, 'click', function() {
+            //     if (MAPAPP.currentInfoWindow) MAPAPP.currentInfoWindow.close();
+            //     marker.infowindow.open(map, marker);
+            //     MAPAPP.currentInfoWindow = marker.infowindow;
+            // });
             MAPAPP.markers.push(marker);
         });
     });

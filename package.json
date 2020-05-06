@@ -12,9 +12,13 @@
   "bugs": {
     "url": "https://github.com/michaelck/nodejs-googlemaps-example/issues"
   },
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "express": ">=4.13",
-    "jade": "1.11.0"
+    "jade": "1.11.0",
+    "require": "^2.4.20"
   },
   "homepage": "https://github.com/michaelck/nodejs-googlemaps-example#readme"
 }

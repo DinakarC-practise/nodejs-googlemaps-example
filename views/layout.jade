@@ -8,8 +8,11 @@ html
         header
             h1= title
             h2= subtitle
+            input(type="text", placeholder="Date")
+            input(type="text", placeholder="DriverID")
+            input(type="text", placeholder="CustomerID")
             nav
-                p Maps of great <a href="coffee" title="Coffee Map">coffee</a> and <a href="pizza" title="Pizza Map">pizza</a> shops in Philadelphia.
+                p Click <a href="mapView" title="map">OK</a> and <a href="pizza" title="Pizza Map">pizza</a> shops in Philadelphia.
         #map_canvas
         script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
         script(src='https://maps.googleapis.com/maps/api/js?&sensor=false')
